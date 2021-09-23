@@ -1,0 +1,11 @@
+#easy-voice-mail {
+    height: auto;
+}
+
+.easy-voice-mail-controls {
+    display: flex;
+}
+
+.easy-voice-mail-controls button {
+    margin: 2px;
+}
