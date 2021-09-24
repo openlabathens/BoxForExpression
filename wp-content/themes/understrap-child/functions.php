@@ -31,3 +31,13 @@ function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
+
+
+//Customize excerpt
+add_post_type_support( 'page', 'excerpt' );
+if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
+    function understrap_all_excerpts_get_more_link( $post_excerpt ) {
+        return $post_excerpt;
+    }
+}
+add_filter( 'wp_trim_excerpt', 'understrap_all_excerpts_get_more_link' );
