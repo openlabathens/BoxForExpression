@@ -14,7 +14,37 @@ a:hover{
 	text-decoration: none;
 }
 
+#page-wrapper{
+	background-image: url('../img/pattern.png');
+	background-repeat: repeat;
+	padding: 0px;
+}
+
+#content{
+	background: #fff;
+	padding: 40px;
+}
+
+.home #content{
+	padding: 0px;
+	background: transparent;
+}
+
+h4{
+	color:$primary;
+	letter-spacing: 3px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	margin-top: 50px;
+	text-decoration: underline;
+}
+
 /* 1. HEADER */
+
+#wrapper-navbar{
+	padding-bottom: 40px;
+	border-bottom: 1px solid $secondary;
+}
 
 
 .logo-line{
@@ -41,17 +71,47 @@ a:hover{
 	text-align: center;
 	font-weight: 300 ;
 	font-size: 40px;
+	letter-spacing: 7px;
 }
 
-/* Home */
+/* FOOTER */
 
-.home{
-	#page-wrapper{
-		background-image: url('../img/pattern.png');
-		background-repeat: repeat;
-		padding: 0px;
+#wrapper-footer{
+	display: none;
+}
+
+#wrapper-footer-full{
+	background: #fff;
+	padding-top: 56px;
+	border-top: 1px solid $secondary;
+}
+
+
+
+/* About */
+
+.special-head{
+	position: relative;
+	.left-back,.right-back{
+		top: 0;
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		z-index: -99;
+	}
+	.left-back{
+		background: #6ba79f;
+	}
+	.right-back{
+		right: 0;
+		background: #1c6c8a;
+	}
+	img{
+		width: 100%;
 	}
 }
+
+
 
 
 /* Archive */
@@ -60,17 +120,29 @@ a:hover{
 	width: 360px;
 	padding: 20px;
 	background: #fff;
+	float: left;
+	height: 650px;
+	border-left:1px solid $secondary;
+	&:hover{
+		background: #f1f1f1;
+	}
 	h5{
 		margin-left: 30px;
 		margin-right: 30px;
 		margin-top:20px;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
+		letter-spacing: 4px;
 	}
 	h2{	
 		margin-top: 30px;
 		margin-bottom: 30px;
 		font-weight: 300;
 		font-size: 40px;
+		letter-spacing: 5px;
 		color:#000;
 	}
+}
+
+.box-206{
+	border-right:1px solid $secondary;
 }

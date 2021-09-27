@@ -19,6 +19,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
+<div class="special-head">
+	<div class="left-back">
+	</div>
+	<div class="container">
+		<div class="row">
+			<img src="<?php echo wp_get_attachment_url(231); ?>">
+		</div>
+	</div>
+	<div class="right-back">
+	</div>
+</div>
+
 <div class="wrapper" id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
@@ -27,31 +39,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 			<main class="site-main" id="main">
-				
-				<div class="about-boxes">
 
-					<?php 
-				//About box
-					global $post;
-					$post = get_post(196);
-					setup_postdata($post); 
-					get_template_part( 'inc/archive', 'box');
-					wp_reset_postdata();
-
-				//Get Cases
-					$cases = new WP_Query( array('post_type'=>'case') );
-					if ( $cases->have_posts() ) {
-						while ( $cases->have_posts() ) {
-							$cases->the_post();
-							get_template_part( 'inc/archive', 'box');
-						}
-						
-					} 
-					wp_reset_postdata();
-					?>
-
-				</div>
-
+				<?php the_content(); ?>
 
 			</main><!-- #main -->
 

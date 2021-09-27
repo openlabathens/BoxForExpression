@@ -330,7 +330,7 @@ template {
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #0f8896;
-  --secondary: #6c757d;
+  --secondary: #1c6c8a;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -424,21 +424,21 @@ template {
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #d6d8db;
+  background-color: #bfd6de;
 }
 .table-secondary th,
 .table-secondary td,
 .table-secondary thead th,
 .table-secondary tbody + tbody {
-  border-color: #b3b7bb;
+  border-color: #89b3c2;
 }
 
 .table-hover .table-secondary:hover {
-  background-color: #c8cbcf;
+  background-color: #aecbd5;
 }
 .table-hover .table-secondary:hover > td,
 .table-hover .table-secondary:hover > th {
-  background-color: #c8cbcf;
+  background-color: #aecbd5;
 }
 
 .table-success,
@@ -945,12 +945,12 @@ mark,
 
 .has-secondary-color,
 .has-secondary-color:visited {
-  color: #6c757d;
+  color: #1c6c8a;
 }
 
 .has-secondary-background-color {
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #1c6c8a;
+  border-color: #1c6c8a;
 }
 
 .has-success-color,
