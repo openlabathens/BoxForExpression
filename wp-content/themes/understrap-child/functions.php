@@ -25,6 +25,13 @@ function theme_enqueue_styles() {
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
+    if( is_singular('case')){
+        if(isset($_GET)){
+            if($_GET['browse']=='items'){
+             wp_enqueue_script( 'explore-js', get_stylesheet_directory_uri() . '/js/custom/explore.js', array('jquery'));
+         }
+     }
+ } 
 }
 
 function add_child_theme_textdomain() {

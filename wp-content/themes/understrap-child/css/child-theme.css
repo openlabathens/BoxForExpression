@@ -14629,7 +14629,7 @@ a:hover {
   text-decoration: none;
 }
 
-#page-wrapper {
+#page-wrapper, #single-wrapper {
   background-image: url("../img/pattern.png");
   background-repeat: repeat;
   padding: 0px;
@@ -14697,6 +14697,18 @@ h4 {
   border-top: 1px solid #1c6c8a;
 }
 
+#block-2 .wp-block-image {
+  max-width: 240px;
+}
+
+#block-3 .wp-block-image {
+  width: 190px;
+}
+
+#block-4 .wp-block-image {
+  width: 133px;
+}
+
 /* About */
 .special-head {
   position: relative;
@@ -14750,6 +14762,78 @@ h4 {
 
 .box-206 {
   border-right: 1px solid #1c6c8a;
+}
+
+/* Cases */
+.case-menu .archive-box {
+  border: 0px;
+  background: #fff;
+  padding: 0px;
+  height: 700px;
+  overflow: hidden;
+}
+
+.single-case #content.initial {
+  padding: 0px;
+  background: none;
+}
+
+/* Explore */
+.single-case #content.items h4 {
+  color: #ed6637;
+}
+
+.explore-controls {
+  display: none;
+  width: 800px;
+  top: 30vh;
+  position: fixed;
+  background: #6ba79e;
+  border-top: 2px solid #dd452d;
+  border-bottom: 2px solid #dd452d;
+  padding: 15px 30px 15px 30px;
+  box-shadow: 10px 10px 10px #00000078;
+}
+.explore-controls h3 {
+  width: 550px;
+  color: #fff;
+  font-size: 22px;
+  float: left;
+}
+.explore-controls h3#view-question-written {
+  margin-left: 20px;
+}
+.explore-controls #play, .explore-controls #pause {
+  height: 80px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 10px;
+  float: left;
+  cursor: pointer;
+}
+.explore-controls #play img, .explore-controls #pause img {
+  max-height: 100%;
+}
+.explore-controls #pause {
+  display: none;
+}
+
+.explore-list {
+  margin-bottom: 60px;
+  display: block;
+  float: left;
+  width: 100%;
+}
+.explore-list .answer {
+  float: left;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 45px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
 }
 
 .has-blue-color,

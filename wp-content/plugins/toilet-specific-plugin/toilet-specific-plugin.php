@@ -41,7 +41,7 @@ function toilet_question_init() {
         'items_list_navigation' => _x( 'Questions list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'toilet' ),
         'items_list'            => _x( 'Questions list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'toilet' ),
     );
- 
+    
     $args = array(
         'labels'             => $labels,
         'public'             => true,
@@ -56,10 +56,10 @@ function toilet_question_init() {
         'menu_position'      => null,
         'supports'           => array( 'title', 'editor' ),
     );
- 
+    
     register_post_type( 'question', $args );
 }
- 
+
 add_action( 'init', 'toilet_question_init' );
 
 /**
@@ -94,7 +94,7 @@ function toilet_answer_init() {
         'items_list_navigation' => _x( 'Answers list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'toilet' ),
         'items_list'            => _x( 'Answers list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'toilet' ),
     );
- 
+    
     $args = array(
         'labels'             => $labels,
         'public'             => true,
@@ -109,10 +109,10 @@ function toilet_answer_init() {
         'menu_position'      => null,
         'supports'           => array( 'title','thumbnail' ),
     );
- 
+    
     register_post_type( 'answer', $args );
 }
- 
+
 add_action( 'init', 'toilet_answer_init' );
 
 
@@ -128,7 +128,7 @@ function toilet_register_taxonomies() {
         'rewrite'      => true,
         'hierarchical' => true
     );
-     
+    
     register_taxonomy( 'type', 'answer', $args );
 }
 add_action( 'init', 'toilet_register_taxonomies', 0 );
@@ -165,7 +165,7 @@ function toilet_case_init() {
         'items_list_navigation' => _x( 'Cases list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'toilet' ),
         'items_list'            => _x( 'Cases list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'toilet' ),
     );
- 
+    
     $args = array(
         'labels'             => $labels,
         'public'             => true,
@@ -178,10 +178,11 @@ function toilet_case_init() {
         'has_archive'        => true,
         'hierarchical'       => true,
         'menu_position'      => null,
+        'show_in_rest' => true,
         'supports'           => array( 'title', 'editor','excerpt','thumbnail'),
     );
- 
+    
     register_post_type( 'case', $args );
 }
- 
+
 add_action( 'init', 'toilet_case_init' );
