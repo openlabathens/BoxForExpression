@@ -1,0 +1,52 @@
+.easy-voice-mail-admin-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.easy-voice-mail-config {
+    flex-shrink: 0;
+    padding: 10px;
+    max-width: calc( 100% - 40px);
+    box-shadow: 0px 1px 15px #00000022;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.easy-voice-mail-config textarea {
+    width: 90%;
+}
+
+.easy-voice-mail-config form {
+    margin: 10px;
+}
+
+.easy-voice-mail-config form input {
+    margin: 10px;
+}
+
+.easy-voice-mail-config h1 {
+    line-height: 100%;
+}
+
+.easy-voice-mail-audio-items {
+    flex-grow: 1;
+    min-height: 100%;
+    box-shadow: 0px 1px 15px #00000022;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.easy-voice-mail-audio-item {
+    display: flex;
+    margin: 10px auto;
+    padding: 20px 10px;
+    width: 90%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 1px solid #00000008;
+    border-radius: 10px;
+}
