@@ -1,0 +1,78 @@
+/* Main */
+.page-id-2,.page-id-52{
+	.navbar-brand{
+		width: 122px;
+		right: 22px;
+		top: 170px;
+		left: unset;
+		span{
+			top: 128px;
+			color: #000;
+			bottom: unset;
+		}
+	}
+}
+.home-item{
+	text-transform: lowercase;
+	position: absolute;
+	h3{
+		display: inline-block;
+		font-size: 2.3rem;
+	}
+	a{
+		color:#15234a !important;
+	}
+	img{
+		width: 120px;
+		height: auto;
+	}
+}
+.item{ 
+	&-why, &-who{ 
+		top: 189px;
+		left: 130px;
+	}
+	&-talk{
+		top: 350px;
+		left: 367px;
+	}
+	&-explore{
+		top: 957px;
+		left: 238px; 
+	}
+}
+.consent-container{
+	position: absolute;
+	background: #152348;
+	color: #fff;
+	padding: 40px;
+	height: 759px;
+	top: 150px;
+	width: 90%;
+	z-index: 99999;
+	display: none;
+	.consent{
+		overflow: scroll;
+		padding-bottom: 50px;
+		height: 666px;
+	}
+	.accept{
+		color:#152348;
+		background: #fff;
+		position: absolute;
+		top: 728px;
+		z-index: 99;
+		color: #000;
+		padding: 21px;
+		height: 65px;
+		width: 65px;
+		font-size: 35px;
+		line-height: 20px;
+		font-weight: bold;
+		border-radius: 100%;
+		cursor: pointer;
+		left: 310px;
+	}
+}
+
+

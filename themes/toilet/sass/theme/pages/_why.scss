@@ -1,0 +1,40 @@
+.why-cta, .who-cta{
+	position: absolute;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.why-cta{
+	top: 486px;
+	left: 474px;
+}
+
+.who-cta{
+	top: 130px;
+	left: 80px;
+}
+
+.about-text{
+	display: none;
+	background: #488191;
+	border-radius: 8px;
+	padding: 15px;
+	z-index: 999;
+	position: absolute;
+	color: #fff;
+	border-radius: 8px;
+	border:1px solid #000;
+	top: 153px;
+}
+
+.why-text{
+	width: 50%;
+}
+.who-text{
+	right: 10px;
+	width: 55%;
+}
+
+.close{
+	cursor: pointer;
+}
